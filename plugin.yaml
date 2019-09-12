@@ -1,0 +1,17 @@
+plugin:
+    name: 'octobro.supercache::lang.plugin.name'
+    description: 'octobro.supercache::lang.plugin.description'
+    author: Octobro
+    icon: oc-icon-bolt
+    homepage: ''
+permissions:
+    octobro.supercache.manage_cacheroute:
+        tab: 'octobro.supercache::lang.plugin.name'
+        label: 'octobro.supercache::lang.plugin.manage_cache_route'
+navigation:
+    CacheRoute:
+        label: 'octobro.supercache::lang.plugin.name'
+        url: octobro/supercache/cacheroutes
+        icon: icon-bolt
+        permissions:
+            - octobro.supercache.manage_cacheroute

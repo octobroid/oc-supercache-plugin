@@ -1,0 +1,15 @@
+fields:
+    route_pattern:
+        label: 'octobro.supercache::lang.plugin.route_pattern'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+        comment: 'octobro.supercache::lang.plugin.route_pattern_comment'
+    cache_ttl:
+        label: 'octobro.supercache::lang.plugin.cache_ttl'
+        span: auto
+        default: '10'
+        required: 1
+        type: number
+        comment: 'octobro.supercache::lang.plugin.cache_ttl_comment'   

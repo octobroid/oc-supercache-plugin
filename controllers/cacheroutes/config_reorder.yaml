@@ -1,0 +1,5 @@
+title: CacheRoutes
+modelClass: Octobro\SuperCache\Models\CacheRoute
+nameFrom: route_pattern
+toolbar:
+    buttons: reorder_toolbar

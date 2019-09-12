@@ -1,0 +1,11 @@
+name: CacheRoutes
+modelClass: Octobro\SuperCache\Models\CacheRoute
+form: $/octobro/supercache/models/cacheroute/fields.yaml
+defaultRedirect: octobro/supercache/cacheroutes
+create:
+    redirect: 'octobro/supercache/cacheroutes/update/:id'
+    redirectClose: octobro/supercache/cacheroutes
+update:
+    redirect: octobro/supercache/cacheroutes
+    redirectClose: octobro/supercache/cacheroutes
+preview: {  }
