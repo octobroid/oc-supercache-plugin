@@ -1,5 +1,6 @@
 <?php namespace Octobro\SuperCache\Classes;
 
+use Str;
 use Cache;
 use Config;
 use Schema;
@@ -99,7 +100,7 @@ class RouteCacheMiddleware
 
         // Check matched route pattern
         foreach ($cacheRouteRows as $cacheRow) {
-            if ($request->is(array_get($cacheRow, 'route_pattern'))) {
+            if (Str::is(array_get($cacheRow, 'host_pattern', '*'), parse_url($request->fullUrl(), PHP_URL_HOST)) && $request->is(array_get($cacheRow, 'route_pattern'))) {
                 return $cacheRow;
             }
         }

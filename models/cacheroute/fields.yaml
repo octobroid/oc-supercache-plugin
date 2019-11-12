@@ -1,4 +1,12 @@
 fields:
+    host_pattern:
+        label: 'octobro.supercache::lang.plugin.host_pattern'
+        oc.commentPosition: ''
+        default: '*'
+        span: auto
+        required: 1
+        type: text
+        comment: 'octobro.supercache::lang.plugin.host_pattern_comment'
     route_pattern:
         label: 'octobro.supercache::lang.plugin.route_pattern'
         oc.commentPosition: ''

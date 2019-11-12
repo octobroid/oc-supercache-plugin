@@ -1,4 +1,9 @@
 columns:
+    host_pattern:
+        label: 'octobro.supercache::lang.plugin.host_pattern'
+        type: text
+        searchable: true
+        sortable: true
     route_pattern:
         label: 'octobro.supercache::lang.plugin.route_pattern'
         type: text

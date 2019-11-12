@@ -11,6 +11,7 @@ class CreateRoutesTable extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->string('host_pattern', 255)->default('*');
             $table->string('route_pattern', 255);
             $table->integer('cache_ttl');
             $table->integer('sort_order')->nullable()->unsigned();
