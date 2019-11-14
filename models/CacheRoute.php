@@ -14,7 +14,8 @@ class CacheRoute extends Model
      * Validation
      */
     public $rules = [
-        'route_pattern' => 'required|unique:octobro_supercache_routes',
+        'host_pattern'  => 'required',
+        'route_pattern' => 'required',
         'cache_ttl'     => 'integer',
     ];
 
