@@ -88,7 +88,9 @@ class RouteCacheMiddleware
         if ($request->method() != 'GET') return false;
 
         // Disable backend
-        if ($request->is(Config::get('cms.backendUri') . '*')) return false;
+        if (Config::has('backend.uri')) {
+            if ($request->is(Config::get('backend.uri') . '*')) return false;
+        }
 
         // Getting cache patterns
         $cacheRouteRows = Cache::remember('octobro.supercache.cachedRoutes',
