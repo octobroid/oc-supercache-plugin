@@ -42,7 +42,7 @@ class RouteCacheMiddleware
                     'Content-Type' => $response->headers->get('Content-Type'),
                 ],
                 'content' => $response->getContent(),
-            ], array_get($cacheRow, 'cache_ttl'));
+            ], array_get($cacheRow, 'cache_ttl', 0) * 60);
         }
 
         $response->header('X-Octobro-SuperCache', 'MISS');
